@@ -6,6 +6,94 @@
 }
 
 
+/* -----light_theme----- */
+
+
+/* button switch */
+
+button#switchButton:hover {
+    color: #000;
+}
+
+#switchButton {
+    font-size: 1.5rem;
+}
+
+#switchButton .fa-sun {
+    display: none;
+}
+
+
+/* -----dark_theme----- */
+
+
+/*  button switch */
+
+.dark #switchButton .fa-sun {
+    display: block;
+    color: #fff;
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+
+/* body dark_mode */
+
+.dark#change_mode {
+    background-color: #151515;
+    color: #fff;
+}
+
+
+/* nav_dark */
+
+.dark#change_mode .navbar {
+    background: #151515;
+}
+
+.dark#change_mode .nav-link {
+    color: #fff;
+}
+
+.dark#change_mode .nav-link.active {
+    color: #189A46;
+}
+
+
+/* dark_aboutUs */
+
+.dark#change_mode .aboutUs .title a {
+    color: #fff;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content {
+    background: #404040;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content .card {
+    background: #151515;
+    transition: all 0.6s;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content .card:hover {
+    background: #404040;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content .card-subtitle {
+    color: #fff;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content .card-text {
+    color: #fff;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content a {
+    color: #fff;
+}
+
+
 /* header */
 
 .navbar {
@@ -13,6 +101,7 @@
     z-index: 100;
     width: 100vw;
     padding: 1.5rem;
+    background: #fff;
 }
 
 .navbar .navbar-brand {
@@ -56,7 +145,7 @@
     display: none;
 }
 
-#navbarNavDropdown .nav-item:last-of-type i {
+#navbarNavDropdown .nav-item.search i {
     font-size: 15px;
     width: 40px;
     height: 40px;
