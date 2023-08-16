@@ -73,6 +73,10 @@ button#switchButton:hover {
     background: #151515;
 }
 
+.dark#change_mode .nav-item.search i {
+    background-color: #232323;
+}
+
 
 /* dark_aboutUs */
 
@@ -103,6 +107,21 @@ button#switchButton:hover {
 
 .dark#change_mode .aboutUs .aboutUs_content a {
     color: #fff;
+}
+
+.dark#change_mode .card-body .card-subtitle a:hover {
+    color: #189A46;
+}
+
+
+/* offer */
+
+.dark#change_mode .offer_right_list li i {
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: #232323;
 }
 
 
@@ -322,6 +341,7 @@ button#switchButton:hover {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    padding: 0 2rem;
 }
 
 .aboutUs_content .card-body .card-title {
@@ -330,13 +350,15 @@ button#switchButton:hover {
     padding-bottom: 1.5rem;
 }
 
-.aboutUs_content .card-body .card-subtitle {
+.aboutUs_content .card-body .card-subtitle a {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1.5rem 0;
+    text-decoration: none;
+    color: #000;
 }
 
-.aboutUs_content .card-body a {
+.aboutUs_content .card-body .card-link {
     font-weight: bold;
     text-decoration: none;
     color: #000;
@@ -364,6 +386,7 @@ button#switchButton:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    border-radius: 10px;
 }
 
 .offer_right .title {
@@ -377,6 +400,10 @@ button#switchButton:hover {
     font-size: 2.5rem;
 }
 
+.offer_right_list ul {
+    padding-left: 0;
+}
+
 .offer_right_list li {
     font-weight: bold;
     list-style: none;
@@ -384,7 +411,7 @@ button#switchButton:hover {
 }
 
 .offer_right_list li i {
-    padding-right: 1rem;
+    padding-left: 0.3rem;
     color: #189A46;
     font-size: 0.8rem;
     font-weight: bold;
