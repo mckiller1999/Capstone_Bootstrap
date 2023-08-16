@@ -361,6 +361,8 @@ button#switchButton:hover {
 }
 
 .offer .offer_left img {
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
