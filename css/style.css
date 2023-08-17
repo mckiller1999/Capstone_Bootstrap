@@ -255,9 +255,9 @@ button#switchButton:hover {
 }
 
 #carouselExampleCaptions .carousel-caption {
-    width: 75%;
-    left: 25vw;
-    top: 35%;
+    width: 100%;
+    left: 30vw;
+    top: 40%;
 }
 
 .carousel-item .carousel-caption button {
@@ -303,34 +303,9 @@ button#switchButton:hover {
 
 /* responsive carousel */
 
-@media screen and (max-width: 1199.98px) {
-    #carouselExampleCaptions .carousel-caption {
-        left: 28vw;
-        top: 30%;
-    }
-    #carouselExampleCaptions .carousel-caption h5 {
-        font-size: 6vw;
-    }
-}
-
 @media screen and (max-width: 991.98px) {
     #carouselExampleCaptions .carousel-caption {
-        top: 30%;
-        left: 35vw;
-    }
-    #carouselExampleCaptions .carousel-caption p {
-        font-size: 3vw;
-    }
-    #carouselExampleCaptions .carousel-caption button {
-        width: 16vw;
-        font-size: 1.8vw;
-    }
-}
-
-@media screen and (max-width: 767.98px) {
-    #carouselExampleCaptions .carousel-caption {
-        left: 40vw;
-        top: 35%;
+        left: 50vw;
     }
 }
 
