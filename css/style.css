@@ -57,6 +57,19 @@ button#switchButton:hover {
     color: #fff;
 }
 
+.dark#change_mode .navbar-toggler {
+    background-color: #189A46;
+    box-shadow: none;
+}
+
+.dark#change_mode .navbar-toggler:focus {
+    border: 2px solid #fff;
+}
+
+.dark#change_mode .navbar-toggler i {
+    color: #fff;
+}
+
 .dark#change_mode .nav-link.active {
     color: #189A46;
 }
@@ -256,12 +269,13 @@ button#switchButton:hover {
 
 #carouselExampleCaptions .carousel-caption {
     width: 100%;
-    left: 30vw;
+    left: 27vw;
     top: 40%;
 }
 
 .carousel-item .carousel-caption button {
     border: 2px solid #fff;
+    border-radius: 10px;
     width: 155px;
     height: 55px;
     color: #189A46;
@@ -433,7 +447,7 @@ button#switchButton:hover {
 
 /* responsive offer */
 
-@media screen and (max-width:575.98px) {
+@media screen and (max-width:1199.98px) {
     .offer .offer_left img {
         width: 90vw;
         margin-left: 1vw;
