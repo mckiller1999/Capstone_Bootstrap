@@ -204,6 +204,83 @@ button#switchButton:hover {
     color: #fff;
 }
 
+.nav-item.search .pop_overlay {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    transition: opacity 0ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    background: #000000ba;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+}
+
+.nav-item.search .pop_overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.search_popup {
+    position: relative;
+    margin: 0rem auto;
+    padding: 15px;
+    top: 50%;
+    max-width: 600px;
+}
+
+.search_popup .row {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_popup input {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+    height: 55px;
+    padding: 15px 20px 12px;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-right: none;
+}
+
+.search_popup button {
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    background: #189A46;
+    padding: 0 25px;
+    border-left: none;
+    border-radius: initial;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.search_popup .close {
+    position: absolute;
+    bottom: 20vh;
+    left: 45vw;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #d6d6d6;
+    transition: all 0.5s;
+}
+
+.search_popup .close:hover {
+    color: #189A46;
+}
+
 #navbarNavDropdown .dropdown-item::after {
     content: '';
     display: block;
@@ -319,7 +396,7 @@ button#switchButton:hover {
 
 @media screen and (max-width: 991.98px) {
     #carouselExampleCaptions .carousel-caption {
-        left: 50vw;
+        left: 55vw;
     }
 }
 
@@ -450,7 +527,7 @@ button#switchButton:hover {
 @media screen and (max-width:1199.98px) {
     .offer .offer_left img {
         width: 90vw;
-        margin-left: 1vw;
+        margin-left: 3vw;
     }
 }
 
