@@ -114,7 +114,7 @@ button#switchButton:hover {
 }
 
 
-/* offer */
+/* offer_dark */
 
 .dark#change_mode .offer_right_list li i {
     line-height: 20px;
@@ -255,7 +255,9 @@ button#switchButton:hover {
 }
 
 #carouselExampleCaptions .carousel-caption {
+    width: 75%;
     left: 25vw;
+    top: 35%;
 }
 
 .carousel-item .carousel-caption button {
@@ -283,6 +285,7 @@ button#switchButton:hover {
     border-radius: 25px;
     border: none;
     opacity: 1;
+    z-index: 50;
 }
 
 #carouselExampleCaptions .carousel-indicators button.active {
@@ -295,6 +298,40 @@ button#switchButton:hover {
     width: 30px;
     height: 10px;
     background: #189A46;
+}
+
+
+/* responsive carousel */
+
+@media screen and (max-width: 1199.98px) {
+    #carouselExampleCaptions .carousel-caption {
+        left: 28vw;
+        top: 30%;
+    }
+    #carouselExampleCaptions .carousel-caption h5 {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    #carouselExampleCaptions .carousel-caption {
+        top: 30%;
+        left: 35vw;
+    }
+    #carouselExampleCaptions .carousel-caption p {
+        font-size: 3vw;
+    }
+    #carouselExampleCaptions .carousel-caption button {
+        width: 16vw;
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    #carouselExampleCaptions .carousel-caption {
+        left: 40vw;
+        top: 35%;
+    }
 }
 
 
@@ -387,6 +424,7 @@ button#switchButton:hover {
     align-items: center;
     height: 100vh;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .offer_right .title {
@@ -415,6 +453,16 @@ button#switchButton:hover {
     color: #189A46;
     font-size: 0.8rem;
     font-weight: bold;
+}
+
+
+/* responsive offer */
+
+@media screen and (max-width:575.98px) {
+    .offer .offer_left img {
+        width: 90vw;
+        margin-left: 1vw;
+    }
 }
 
 
