@@ -97,6 +97,14 @@ button#switchButton:hover {
     color: #fff;
 }
 
+.dark#change_mode .aboutUs a:hover {
+    color: #189A46;
+}
+
+.dark#change_mode .aboutUs .card-link:hover {
+    color: #189A46;
+}
+
 .dark#change_mode .aboutUs .aboutUs_content {
     background: #232323;
 }
@@ -156,7 +164,6 @@ button#switchButton:hover {
 
 .navbar .nav-item {
     margin: 0 0.5rem;
-    /* font-size: 1.2rem; */
     font-weight: bold;
 }
 
@@ -299,6 +306,15 @@ button#switchButton:hover {
 }
 
 
+/* @media screen and (max-width: 991.98px) {
+    .navbar .dark_mode {
+        display: inline-block;
+        position: relative;
+        width: 60px;
+    }
+} */
+
+
 /* carousel */
 
 #carouselExampleCaptions .carousel-item {
@@ -345,7 +361,7 @@ button#switchButton:hover {
 }
 
 #carouselExampleCaptions .carousel-caption {
-    width: 100%;
+    width: 95%;
     left: 27vw;
     top: 40%;
 }
@@ -398,6 +414,9 @@ button#switchButton:hover {
     #carouselExampleCaptions .carousel-caption {
         left: 55vw;
     }
+    #carouselExampleCaptions .carousel-caption h5 {
+        font-size: 2rem;
+    }
 }
 
 
@@ -432,6 +451,11 @@ button#switchButton:hover {
     text-decoration: none;
     font-weight: bold;
     border-bottom: 2px solid #189A46;
+    transition: all 0.5s;
+}
+
+.title a:hover {
+    color: #189A46;
 }
 
 .aboutUs_content .card {
