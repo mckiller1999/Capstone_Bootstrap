@@ -216,9 +216,11 @@ button#switchButton:hover {
 
 #carouselExampleCaptions .carousel-caption {
     text-align: start;
-    margin-bottom: 5%;
-    margin-right: 50%;
-    transform: translate(-50%, 0);
+    /* margin-bottom: 5%;
+    margin-right: 50%; */
+    bottom: 20%;
+    right: 20%;
+    transform: translate(0%, 0);
     z-index: 10;
 }
 
@@ -256,11 +258,11 @@ button#switchButton:hover {
     left: 0;
 }
 
-#carouselExampleCaptions .carousel-caption {
-    width: 95%;
+
+/* #carouselExampleCaptions .carousel-caption {
     left: 50vw;
     bottom: 10%;
-}
+} */
 
 .carousel-item .carousel-caption button {
     border: 2px solid #fff;
