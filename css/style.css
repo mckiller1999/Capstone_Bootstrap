@@ -330,9 +330,14 @@ button#switchButton:hover {
     }
     #carouselExampleCaptions .carousel-caption button {
         margin: 0.5rem;
-        font-size: 5px;
+        padding-bottom: 13px;
+        font-size: 5.5px;
         width: 15vw;
         height: 2.5vh;
+    }
+    #carouselExampleCaptions .carousel-indicators {
+        margin: 0;
+        padding: 0;
     }
 }
 
