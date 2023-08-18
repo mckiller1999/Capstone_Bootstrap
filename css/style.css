@@ -24,132 +24,11 @@ button#switchButton:hover {
 }
 
 
-/* -----dark_theme----- */
-
-
-/*  button switch */
-
-.dark #switchButton .fa-sun {
-    display: block;
-    color: #fff;
-}
-
-.dark #switchButton .fa-moon {
-    display: none;
-}
-
-
-/* body dark_mode */
-
-.dark#change_mode {
-    background-color: #151515;
-    color: #fff;
-}
-
-
-/* nav_dark */
-
-.dark#change_mode .navbar {
-    background: #151515;
-}
-
-.dark#change_mode .nav-link {
-    color: #fff;
-}
-
-.dark#change_mode .navbar-toggler {
-    background-color: #189A46;
-    box-shadow: none;
-}
-
-.dark#change_mode .navbar-toggler:focus {
-    border: 2px solid #fff;
-}
-
-.dark#change_mode .navbar-toggler i {
-    color: #fff;
-}
-
-.dark#change_mode .nav-link.active {
-    color: #189A46;
-}
-
-.dark#change_mode .navbar .dropdown-menu {
-    background: #151515;
-}
-
-.dark#change_mode .navbar .dropdown-item {
-    color: #fff;
-}
-
-.dark#change_mode .navbar .dropdown-item:hover {
-    background: #151515;
-}
-
-.dark#change_mode .nav-item.search i {
-    background-color: #232323;
-}
-
-
-/* dark_aboutUs */
-
-.dark#change_mode .aboutUs .title a {
-    color: #fff;
-}
-
-.dark#change_mode .aboutUs a:hover {
-    color: #189A46;
-}
-
-.dark#change_mode .aboutUs .card-link:hover {
-    color: #189A46;
-}
-
-.dark#change_mode .aboutUs .aboutUs_content {
-    background: #232323;
-}
-
-.dark#change_mode .aboutUs .aboutUs_content .card {
-    background: #151515;
-    transition: all 0.6s;
-}
-
-.dark#change_mode .aboutUs .aboutUs_content .card:hover {
-    background: #232323;
-}
-
-.dark#change_mode .aboutUs .aboutUs_content .card-subtitle {
-    color: #fff;
-}
-
-.dark#change_mode .aboutUs .aboutUs_content .card-text {
-    color: #fff;
-}
-
-.dark#change_mode .aboutUs .aboutUs_content a {
-    color: #fff;
-}
-
-.dark#change_mode .card-body .card-subtitle a:hover {
-    color: #189A46;
-}
-
-
-/* offer_dark */
-
-.dark#change_mode .offer_right_list li i {
-    line-height: 20px;
-    width: 20px;
-    height: 20px;
-    border-radius: 25px;
-    background-color: #232323;
-}
-
-
 /* header */
 
 .navbar {
     position: fixed;
+    top: 0;
     z-index: 100;
     width: 100vw;
     padding: 1.5rem;
@@ -306,36 +185,53 @@ button#switchButton:hover {
 }
 
 
-/* @media screen and (max-width: 991.98px) {
-    .navbar .dark_mode {
-        display: inline-block;
-        position: relative;
-        width: 60px;
+/* responsive header */
+
+@media screen and (max-width:991.98px) {
+    .navbar {
+        padding: 0.5rem 1.5rem;
     }
-} */
+    .navbar .navbar-brand {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    .navbar {
+        padding: 0.5rem 1.5rem;
+    }
+    .navbar .navbar-brand {
+        font-size: 1rem;
+    }
+}
 
 
 /* carousel */
 
-#carouselExampleCaptions .carousel-item {
+
+/* #carouselExampleCaptions .carousel-item {
     height: 100vh;
     top: 5rem;
-}
+} */
 
 #carouselExampleCaptions .carousel-caption {
-    max-width: 500px;
     text-align: start;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 5%;
+    margin-right: 50%;
+    transform: translate(-50%, 0);
     z-index: 10;
 }
 
 #carouselExampleCaptions .carousel-caption h5 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
-.carousel-item:nth-child(1) {
+#carouselExampleCaptions .carousel-caption p {
+    font-size: 1.5rem;
+}
+
+
+/* .carousel-item:nth-child(1) {
     background: url(../img/banner1.jpg) no-repeat center top/cover;
 }
 
@@ -349,7 +245,7 @@ button#switchButton:hover {
 
 .carousel-item:nth-child(4) {
     background: url(../img/banner2.jpg) no-repeat center top/cover;
-}
+} */
 
 .overlay {
     background: rgba(0, 0, 0, 0.5);
@@ -362,7 +258,7 @@ button#switchButton:hover {
 
 #carouselExampleCaptions .carousel-caption {
     width: 95%;
-    left: 27vw;
+    left: 50vw;
     top: 40%;
 }
 
@@ -412,10 +308,31 @@ button#switchButton:hover {
 
 @media screen and (max-width: 991.98px) {
     #carouselExampleCaptions .carousel-caption {
-        left: 55vw;
+        top: auto;
+        /* transform: translateX(auto); */
     }
     #carouselExampleCaptions .carousel-caption h5 {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    #carouselExampleCaptions .carousel-caption {
+        flex-direction: column;
+    }
+    #carouselExampleCaptions .carousel-caption h5 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    #carouselExampleCaptions .carousel-caption p {
+        font-size: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    #carouselExampleCaptions .carousel-caption button {
+        margin: 0.5rem;
+        font-size: 5px;
+        width: 15vw;
+        height: 2.5vh;
     }
 }
 
@@ -510,17 +427,18 @@ button#switchButton:hover {
 }
 
 .offer .offer_left img {
+    width: 95%;
     justify-content: center;
     align-items: center;
     height: 100vh;
     border-radius: 10px;
     object-fit: cover;
+    margin-bottom: 5rem;
 }
 
 .offer_right .title {
-    width: 100%;
-    left: 0;
-    transform: translate(0);
+    width: 80%;
+    left: 10%;
     text-align: start;
 }
 
@@ -555,6 +473,12 @@ button#switchButton:hover {
     }
 }
 
+@media screen and (max-width: 991.98px) {
+    .offer .offer_right {
+        width: 75%;
+    }
+}
+
 
 /* number count */
 
@@ -574,3 +498,128 @@ button#switchButton:hover {
 .number .container-fluid .row p {
     font-size: 1rem;
 }
+
+
+/* -----dark_theme----- */
+
+
+/*  button switch */
+
+.dark #switchButton .fa-sun {
+    display: block;
+    color: #fff;
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+
+/* body dark_mode */
+
+.dark#change_mode {
+    background-color: #151515;
+    color: #fff;
+}
+
+
+/* nav_dark */
+
+.dark#change_mode .navbar {
+    background: #151515;
+}
+
+.dark#change_mode .nav-link {
+    color: #fff;
+}
+
+.dark#change_mode .navbar-toggler {
+    background-color: #189A46;
+    box-shadow: none;
+}
+
+.dark#change_mode .navbar-toggler:focus {
+    border: 2px solid #fff;
+}
+
+.dark#change_mode .navbar-toggler i {
+    color: #fff;
+}
+
+.dark#change_mode .nav-link.active {
+    color: #189A46;
+}
+
+.dark#change_mode .navbar .dropdown-menu {
+    background: #151515;
+}
+
+.dark#change_mode .navbar .dropdown-item {
+    color: #fff;
+}
+
+.dark#change_mode .navbar .dropdown-item:hover {
+    background: #151515;
+}
+
+.dark#change_mode .nav-item.search i {
+    background-color: #232323;
+}
+
+
+/* dark_aboutUs */
+
+.dark#change_mode .aboutUs .title a {
+    color: #fff;
+}
+
+.dark#change_mode .aboutUs a:hover {
+    color: #189A46;
+}
+
+.dark#change_mode .aboutUs .card-link:hover {
+    color: #189A46;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content {
+    background: #232323;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content .card {
+    background: #151515;
+    transition: all 0.6s;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content .card:hover {
+    background: #232323;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content .card-subtitle {
+    color: #fff;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content .card-text {
+    color: #fff;
+}
+
+.dark#change_mode .aboutUs .aboutUs_content a {
+    color: #fff;
+}
+
+.dark#change_mode .card-body .card-subtitle a:hover {
+    color: #189A46;
+}
+
+
+/* offer_dark */
+
+.dark#change_mode .offer_right_list li i {
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: #232323;
+}
+
+
+/* ------------------------------------- */
