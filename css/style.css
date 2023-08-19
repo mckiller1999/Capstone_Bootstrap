@@ -208,20 +208,11 @@ button#switchButton:hover {
 
 /* carousel */
 
-
-/* #carouselExampleCaptions .carousel-item {
-    height: 100vh;
-    top: 5rem;
-} */
-
 #carouselExampleCaptions .carousel-caption {
     text-align: start;
-    /* margin-bottom: 5%;
-    margin-right: 50%; */
     bottom: 20%;
     right: 20%;
-    transform: translate(0%, 0);
-    z-index: 10;
+    transform: translate(-15%);
 }
 
 #carouselExampleCaptions .carousel-caption h5 {
@@ -232,23 +223,6 @@ button#switchButton:hover {
     font-size: 1.5rem;
 }
 
-
-/* .carousel-item:nth-child(1) {
-    background: url(../img/banner1.jpg) no-repeat center top/cover;
-}
-
-.carousel-item:nth-child(2) {
-    background: url(../img/banner2.jpg) no-repeat center top/cover;
-}
-
-.carousel-item:nth-child(3) {
-    background: url(../img/banner1.jpg) no-repeat center top/cover;
-}
-
-.carousel-item:nth-child(4) {
-    background: url(../img/banner2.jpg) no-repeat center top/cover;
-} */
-
 .overlay {
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -257,12 +231,6 @@ button#switchButton:hover {
     top: 0;
     left: 0;
 }
-
-
-/* #carouselExampleCaptions .carousel-caption {
-    left: 50vw;
-    bottom: 10%;
-} */
 
 .carousel-item .carousel-caption button {
     border: 2px solid #fff;
@@ -313,19 +281,12 @@ button#switchButton:hover {
 /* responsive carousel */
 
 @media screen and (max-width: 991.98px) {
-    #carouselExampleCaptions .carousel-caption {
-        top: auto;
-        /* transform: translateX(auto); */
-    }
     #carouselExampleCaptions .carousel-caption h5 {
         font-size: 3rem;
     }
 }
 
 @media screen and (max-width: 767.98px) {
-    #carouselExampleCaptions .carousel-caption {
-        flex-direction: column;
-    }
     #carouselExampleCaptions .carousel-caption h5 {
         font-size: 1rem;
         margin-bottom: 0.5rem;
@@ -350,9 +311,7 @@ button#switchButton:hover {
     margin: 10rem auto;
     text-align: center;
     width: 70%;
-    display: inline-block;
     left: 50%;
-    transform: translate(22%);
 }
 
 .title h2 {
@@ -443,9 +402,7 @@ button#switchButton:hover {
 }
 
 .offer .offer_left img {
-    width: 95%;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     height: 100vh;
     border-radius: 10px;
     object-fit: cover;
@@ -454,7 +411,6 @@ button#switchButton:hover {
 
 .offer_right .title {
     width: 80%;
-    left: 10%;
     text-align: start;
 }
 
@@ -491,7 +447,7 @@ button#switchButton:hover {
 
 @media screen and (max-width: 991.98px) {
     .offer .offer_right {
-        width: 75%;
+        width: 70vw;
     }
 }
 
@@ -514,6 +470,9 @@ button#switchButton:hover {
 .number .container-fluid .row p {
     font-size: 1rem;
 }
+
+
+/* ----------------------------------- */
 
 
 /* -----dark_theme----- */
