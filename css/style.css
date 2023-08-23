@@ -546,6 +546,65 @@ button#switchButton:hover {
     margin-bottom: 3rem;
 }
 
+.plans__detail{
+    padding: 56px 40px;
+}
+
+.plans__detail .plans__top h6{
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.plans__detail .plans__top h4{
+    font-size: 2.5rem;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    font-weight: 600;
+    color: #189A46;
+}
+.plans__detail .plans__top span:first-of-type{
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+    vertical-align: text-top;
+}
+.plans__detail .plans__top span:last-of-type{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    color: #999;
+}
+
+.plans__detail .plans__bottom li{
+    font-size: 1.125rem;
+    color: #696969;
+    line-height: 1.75rem;
+    padding-top: 6px;
+    line-height: 28px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.plans__bottom{
+    padding-top: 1rem;
+}
+.plans__bottom ul{
+    padding-left: 0;
+}
+
+.plans__bottom button{
+    margin-top: 18px;
+}
+
+.plans__col{
+    background-color: #fff;
+    border-radius: 6px;
+    align-items: center;
+    box-shadow: 10px 5px 5px red;
+   
+}
+
+
 
 /* ----------------------------------- */
 
