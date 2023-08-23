@@ -1,4 +1,5 @@
 /* global  */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +7,17 @@
     scroll-behavior: smooth;
 }
 
-html, 
-body{
+html,
+body {
     font-family: 'Jost', sans-serif;
 }
-.section{
+
+.section {
     padding: 3rem 0;
 }
+
 .title {
-    margin: auto 15rem;
+    margin: auto 0;
     text-align: center;
     padding-top: 24px;
     /* width: 70%;
@@ -53,12 +56,11 @@ body{
     color: #189A46;
 }
 
-
-li{
+li {
     list-style: none;
 }
 
-.button__green{
+.button__green {
     padding: 12px 35px;
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -69,6 +71,7 @@ li{
     border-radius: 10px;
     transition: 0.5s all;
 }
+
 
 /* -----light_theme----- */
 
@@ -371,10 +374,13 @@ button#switchButton:hover {
 
 /* aboutUs */
 
-
 .aboutUs_content .card {
     margin: 2rem 0;
     border: none;
+}
+
+.aboutUs .aboutUs_content {
+    background-color: rgba(147, 107, 232, 0.05);
 }
 
 .aboutUs_content .card-body {
@@ -383,6 +389,11 @@ button#switchButton:hover {
     justify-content: center;
     align-items: start;
     padding: 0 2rem;
+    transition: all 0.3s ease-out;
+}
+
+.aboutUs_content .card-body:hover {
+    background-color: rgba(160, 124, 238, 0.09);
 }
 
 .aboutUs_content .card-body .card-title {
@@ -424,20 +435,14 @@ button#switchButton:hover {
 /* offer */
 
 .offer {
-    margin-top: 5rem;
-}
-
-.offer .container {
-    display: flex;
-    justify-content: center;
+    margin: 5rem 0;
 }
 
 .offer .offer_left img {
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
-    margin-bottom: 5rem;
 }
 
 .offer_right .title {
@@ -464,22 +469,11 @@ button#switchButton:hover {
     color: #189A46;
     font-size: 0.8rem;
     font-weight: bold;
-}
-
-
-/* responsive offer */
-
-@media screen and (max-width:1199.98px) {
-    .offer .offer_left img {
-        width: 90vw;
-        margin-left: 3vw;
-    }
-}
-
-@media screen and (max-width: 991.98px) {
-    .offer .offer_right {
-        width: 70vw;
-    }
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: rgba(160, 124, 238, 0.09);
 }
 
 
@@ -502,29 +496,25 @@ button#switchButton:hover {
     font-size: 1rem;
 }
 
+
 /* plans  */
-.plans{
-    margin: 0 112.5px;
+
+.plans {
+    margin: 0 auto;
     padding: 48px 15px;
     text-align: center;
 }
 
-.plans .title h2{
+.plans .title h2 {
     font-weight: 600;
     margin-bottom: 10px;
     font-size: 25px;
     line-height: 1.875rem;
 }
 
-.plans .title h1{
+.plans .title h1 {
     margin-bottom: 3rem;
 }
-
-
-
-
-
-
 
 
 /* ----------------------------------- */
