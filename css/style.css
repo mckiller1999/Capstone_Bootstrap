@@ -1,3 +1,4 @@
+/* global  */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,69 @@
     scroll-behavior: smooth;
 }
 
+html, 
+body{
+    font-family: 'Jost', sans-serif;
+}
+.section{
+    padding: 3rem 0;
+}
+.title {
+    margin: auto 15rem;
+    text-align: center;
+    padding-top: 24px;
+    /* width: 70%;
+    left: 50%; */
+}
+
+.title h2 {
+    color: #f53626;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.title p {
+    line-height: 1.75rem;
+    font-size: 1.2em;
+    color: #696969;
+}
+
+.title a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #189A46;
+    transition: all 0.5s;
+}
+
+.title a:hover {
+    color: #189A46;
+}
+
+
+li{
+    list-style: none;
+}
+
+.button__green{
+    padding: 12px 35px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: white;
+    background-color: #189A46;
+    border: 1px solid #189A46;
+    border-radius: 10px;
+    transition: 0.5s all;
+}
 
 /* -----light_theme----- */
 
@@ -307,39 +371,6 @@ button#switchButton:hover {
 
 /* aboutUs */
 
-.title {
-    margin: 10rem auto;
-    text-align: center;
-    width: 70%;
-    left: 50%;
-}
-
-.title h2 {
-    color: #f53626;
-    font-size: 1rem;
-    font-weight: 200;
-}
-
-.title h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.title p {
-    line-height: 1.5rem;
-}
-
-.title a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 2px solid #189A46;
-    transition: all 0.5s;
-}
-
-.title a:hover {
-    color: #189A46;
-}
 
 .aboutUs_content .card {
     margin: 2rem 0;
@@ -470,6 +501,30 @@ button#switchButton:hover {
 .number .container-fluid .row p {
     font-size: 1rem;
 }
+
+/* plans  */
+.plans{
+    margin: 0 112.5px;
+    padding: 48px 15px;
+    text-align: center;
+}
+
+.plans .title h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 1.875rem;
+}
+
+.plans .title h1{
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
 
 
 /* ----------------------------------- */
