@@ -533,6 +533,7 @@ button#switchButton:hover {
     margin: 0 auto;
     padding: 48px 15px;
     text-align: center;
+    background-color: rgba(147, 107, 232, 0.05);
 }
 
 .plans .title h2 {
@@ -541,35 +542,46 @@ button#switchButton:hover {
     font-size: 25px;
     line-height: 1.875rem;
 }
+.plans__col{
+    padding: 0;
+    
+}
 
+.plans__content.row{
+    margin: 0 5% auto;
+    width: 90%;
+}
 .plans .title h1 {
     margin-bottom: 3rem;
 }
-
 .plans__detail{
+    margin-top: 50px;
     padding: 56px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    
 }
 
-.plans__detail .plans__top h6{
+.plans__col .plans__top h6{
     margin-bottom: 10px;
     font-size: 25px;
     line-height: 30px;
     font-weight: 600;
 }
 
-.plans__detail .plans__top h4{
+.plans__col .plans__top h4{
     font-size: 2.5rem;
     line-height: 45px;
     margin: 15px 0 20px;
     font-weight: 600;
     color: #189A46;
 }
-.plans__detail .plans__top span:first-of-type{
+.plans__col .plans__top span:first-of-type{
     font-size: 25px;
     margin-bottom: 0.5rem;
     vertical-align: text-top;
 }
-.plans__detail .plans__top span:last-of-type{
+.plans__col .plans__top span:last-of-type{
     font-size: 1rem;
     font-weight: 400;
     line-height: 25px;
@@ -597,14 +609,51 @@ button#switchButton:hover {
 }
 
 .plans__col{
-    background-color: #fff;
-    border-radius: 6px;
+    
     align-items: center;
-    box-shadow: 10px 5px 5px red;
+    /* box-shadow: 10px 5px 5px red; */
    
 }
+.plans__col.plans__col_center .plans__top{
+    background-color: #189A46;
+    border-radius: 10px 10px 0 0;
+}
+.plans__top h5{
+    font-size: 15px;
+    font-weight: 700;
+    color: #189A46;
+    margin-bottom: 30px;
+    padding: 8px 20px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 10px;
+}
+.plans__col.active .plans__top h6,
+.plans__col.active .plans__top h4,
+.plans__col.active .plans__top span{
+    color: #fff;
+}
 
+.plans__col.active .plans__top{
+    padding: 3em 2.5em .5em;
+}
+.plans__col.active .plans__detail{
+    margin-top: 0;
+}
 
+.plans__content .plans__col.active {
+    box-shadow: 0 10px 30px 0 rgba(17, 17, 17, 0.09);
+    border-radius: 6px;
+    z-index: 1;
+}
+.plans__content .plans__col.active .plans__detail{
+    padding-top: 15px;
+}
+
+.plans__detail button:hover{
+    background-color: #116E32;
+    border-color: #116E32;
+}
 
 /* ----------------------------------- */
 
