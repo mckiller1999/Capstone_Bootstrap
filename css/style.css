@@ -439,12 +439,21 @@ button#switchButton:hover {
 /* responsive AboutUs */
 
 @media screen and (max-width: 991.98px) {
+    .aboutUs .container {
+        width: 100%;
+        line-height: 0;
+    }
     .ab_title .title h1 {
         font-size: 4vw;
     }
     .ab_title .title {
         font-size: 2vw;
     }
+    /* .aboutUs .ab_title {
+        padding-bottom: 30rem;
+        line-height: 0;
+        height: 20rem;
+    } */
 }
 
 
