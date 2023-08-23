@@ -374,13 +374,26 @@ button#switchButton:hover {
 
 /* aboutUs */
 
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUs .container {
+    width: 40%;
+}
+
 .aboutUs_content .card {
     margin: 2rem 0;
     border: none;
 }
 
-.aboutUs .aboutUs_content {
+.aboutUs .list_ab {
     background-color: rgba(147, 107, 232, 0.05);
+}
+
+.aboutUs .container-fluid {
+    max-width: 65%;
 }
 
 .aboutUs_content .card-body {
@@ -426,8 +439,11 @@ button#switchButton:hover {
 /* responsive AboutUs */
 
 @media screen and (max-width: 991.98px) {
-    .aboutUs_content .card {
-        width: 95%;
+    .ab_title .title h1 {
+        font-size: 4vw;
+    }
+    .ab_title .title {
+        font-size: 2vw;
     }
 }
 
@@ -439,8 +455,9 @@ button#switchButton:hover {
 }
 
 .offer .offer_left img {
+    margin-left: 10%;
     max-width: 100%;
-    height: auto;
+    height: 85%;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -479,20 +496,24 @@ button#switchButton:hover {
 
 /* number count */
 
-.number .container-fluid .row {
+.number {
+    background: #189A46;
+}
+
+.number .container .row {
     color: #fff;
     padding: 3rem 0;
     text-align: center;
-    background: #189A46;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
 }
 
-.number .container-fluid .row h1 {
+.number .container .row h1 {
     font-size: 3.3rem;
 }
 
-.number .container-fluid .row p {
+.number .container .row p {
     font-size: 1rem;
 }
 
@@ -589,6 +610,10 @@ button#switchButton:hover {
 
 /* dark_aboutUs */
 
+.dark#change_mode .list_ab {
+    background-color: #232323;
+}
+
 .dark#change_mode .aboutUs .title a {
     color: #fff;
 }
@@ -599,10 +624,6 @@ button#switchButton:hover {
 
 .dark#change_mode .aboutUs .card-link:hover {
     color: #189A46;
-}
-
-.dark#change_mode .aboutUs .aboutUs_content {
-    background: #232323;
 }
 
 .dark#change_mode .aboutUs .aboutUs_content .card {
@@ -639,6 +660,10 @@ button#switchButton:hover {
     height: 20px;
     border-radius: 25px;
     background-color: #232323;
+}
+
+.dark#change_mode .offer_right_list li p {
+    color: #fff;
 }
 
 
