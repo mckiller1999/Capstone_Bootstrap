@@ -378,6 +378,10 @@ button#switchButton:hover {
     flex-direction: column;
 } */
 
+.aboutUs_content {
+    background-color: #f9f7fe;
+}
+
 .aboutUs .ab_title {
     max-width: 950px;
     margin: 0 auto;
@@ -386,10 +390,6 @@ button#switchButton:hover {
 .aboutUs_content .card {
     margin: 2rem 0;
     border: none;
-}
-
-.aboutUs .list_ab {
-    background-color: rgba(147, 107, 232, 0.05);
 }
 
 .aboutUs .list_ab {
